@@ -1,7 +1,7 @@
 
 // Start test with the npm install set up command
 // Run test with the npm run test command
-
+import greet from './greet name';
 describe('test greet()', function () {
   it('should greet a name', function () {
     expect(greet('Elizabeth')).toContain('Hello, Elizabeth');
@@ -22,7 +22,7 @@ describe('test greet()', function () {
   });
 }); 
 
-function greet(name) {
+export default function greet(name) {
   if (name === null || name === undefined)
       return 'Hello there!';
  if (typeof name === typeof []) {
